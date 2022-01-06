@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282d35;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222a;
+  height: 30px;
+  padding: 30px 25px;
+  justify-content: space-between;
+}
+.nav-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-items > li {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+}
+.nav-links:hover {
+  color: #ea2027;
+  font-size: larger;
+}
+
+.nav-logo {
+  width: 50px;
+}
+.nav > h1 {
+  margin-right: auto;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 30px;
+  text-shadow: 1.5px 1.5px red;
+}
+.main-section {
+  background-image: url(./Logo.png);
+  background-repeat: no-repeat;
+  background-position-x: 120%;
+  background-position-y: center;
+  background-size: 400px 410px;
+}
+
+.main-title {
+  padding: 57px 27px;
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.01em;
+  color: white;
+}
+.main-list {
+  color: white;
+  margin-top: 0px;
+}
+.main-list > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main-list > li::marker {
+  font-size: 2rem;
+  color: #ea2027;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #21222a;
+  color: white;
+  text-align: center;
+}
+.card {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: white;
+  font-size: large;
+}
+.officer-photo {
+  max-width: 250px;
+  align-self: center;
+  border-radius: 12px;
+}
+.card-star {
+  height: 25px;
+}
