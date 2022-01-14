@@ -92,7 +92,7 @@ body {
   font-weight: bold;
 }
 
-.card-image{
+.card-image {
   height: 350px;
   border-radius: 12px;
 }
@@ -105,16 +105,16 @@ body {
   gap: 20px;
   overflow-x: auto;
 }
-.card-badge{
+.card-badge {
   margin-top: 10px;
 }
-.card-title{
- font-size: 16px;
+.card-title {
+  font-size: 16px;
 }
-.card-price{
+.card-price {
   color: #3498db;
 }
-section{
+section {
   padding: 30px;
   margin-left: 30px;
 }
@@ -123,16 +123,86 @@ section{
   flex-direction: column;
   align-items: center;
 }
-.photo-grid{
+.photo-grid {
   height: 500px;
   align-self: center;
   border-radius: 12px;
 }
-.grid-header{
+.grid-header {
   font-size: 30px;
   font-weight: bold;
   color: white;
 }
-.grid-text{
+.grid-text {
   color: #3498db;
+}
+.meme-input {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 10px;
+}
+.form-main {
+  padding: 36px;
+}
+.getimage-button {
+  grid-column: 1 / -1;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  background-color: #7f8c8d;
+  color: white;
+  font-weight: bolder;
+}
+.getimage-button:hover {
+  cursor: pointer;
+  background-color: #535c68;
+}
+.meme-input {
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+.meme-text:focus {
+  border: 2px solid #21222a;
+  outline: none;
+}
+.meme-image {
+  padding: 10px;
+  max-width: 50%;
+  border-radius: 20px;
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 20%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.bottom {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px black;
+}
+
+.top {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px black;
+}
+.meme-image-container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
