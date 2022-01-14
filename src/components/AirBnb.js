@@ -16,7 +16,6 @@ const AirBnb = () => {
       <section className="cards-list">{cards}</section>
       <Hero/>
       <Footer />
-      
     </div>
   );
 };
