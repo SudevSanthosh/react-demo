@@ -2,10 +2,16 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../Logo.png";
 
-const Header = () => {
+const Header = (props) => {
+  const [isDarkMode, setIsDarkMode] = React.useState(true);
+
+  function changeMode() {
+    setIsDarkMode((prevState) => !prevState);
+  }
+
   return (
     <header>
-      <nav className="nav">
+      <nav className={props.darkMode ? "light" : "nav"}>
         <img src={Logo} className="nav-logo" alt="website-logo" />
         <h1 className="welcome">Company Name</h1>
         <ul className="nav-items">
@@ -28,6 +34,17 @@ const Header = () => {
             <Link to="/tenzies" className="nav-links">
               Tenzies
             </Link>
+          </li>
+          <li>
+            <button
+              className="theme-button"
+              onClick={() => {
+                changeMode();
+                props.toggleDarkMode();
+              }}
+            >
+              Switch to {isDarkMode ? " Dark" : " Light"} mode{" "}
+            </button>
           </li>
         </ul>
       </nav>

@@ -4,11 +4,17 @@ import Header from "./Header";
 import MainContent from "./MainContent";
 
 const Main = () => {
+  const [darkMode, setDarkMode] = React.useState(true);
+
+  function toggleDarkMode() {
+    setDarkMode((prevMode) => !prevMode);
+    console.log("toggle dark mode");
+  }
   return (
     <div>
-      <Header />
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <MainContent />
-      <Footer />
+      <Footer darkMode={darkMode} />
     </div>
   );
 };
